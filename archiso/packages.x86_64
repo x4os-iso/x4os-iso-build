@@ -504,7 +504,7 @@ urxvt-perls
 urxvt-resize-font-git
 #wttr
 yad
-yakuake
+#yakuake
 yay-bin
 
 ###########################################################################
@@ -979,3 +979,29 @@ qt5-virtualkeyboard
 
 
 #kde-development-environment-meta
+
+atom
+latte-dock
+#sublime-text-4
+#timeshift
+#timeshift-autosnap
+#wps-office
+#wps-office-mime
+#ttf-wps-fonts
+#ttf-windows AUR
+gnome-disk-utility
+linux-lts
+linux-lts-headers
+#yakuake (removed above)
+copyq
+baobab
+hplip
+#ksnip
+#displaylink AUR
+#displaylink-connect AUR
+#dl-switch AUR
+#evdi-git AUR
+
+arcolinux-plasma-arc-dark-candy-git
+pkg1
+

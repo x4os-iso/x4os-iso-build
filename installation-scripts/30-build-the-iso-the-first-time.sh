@@ -14,6 +14,37 @@
 #   DO NOT JUST RUN THIS. EXAMINE AND JUDGE. RUN AT YOUR OWN RISK.
 #
 ##################################################################################################################
+
+
+echo "################################################################################################ "
+echo "################# X4OS Change #1: build local custom package pkg1 and add to repositories ###### "
+echo "################################################################################################ "
+#store the current script location for later restore (assuming script is launched after cd <script-folder>)
+scriptFolder=$(pwd)
+
+#if exists then remove temporary package build folder
+rm -rf /tmp/pkg1
+
+#create temporary package build folder
+mkdir /tmp/pkg1
+
+#copy package files in tmp build folder
+cp ../packages/pkg1/PKGBUILD /tmp/pkg1
+cp ../packages/pkg1/pkg1.install /tmp/pkg1
+
+#build package
+cd /tmp/pkg1
+makepkg
+
+#create repo db and add built package
+repo-add x4os-pkg1.db.tar.gz pkg1-1.0.0-1-x86_64.pkg.tar.zst 
+
+#cd back to the stored script location
+cd $scriptFolder
+##################################################################################################################
+
+
+
 echo
 echo "################################################################## "
 tput setaf 2
@@ -180,6 +211,16 @@ echo
 	echo
 	wget https://raw.githubusercontent.com/arcolinux/arcolinux-root/master/etc/skel/.bashrc-latest -O $buildFolder/archiso/airootfs/etc/skel/.bashrc
 
+
+
+	echo "################################################################################################ "
+	echo "################# X4OS Change #2: add custom configs (themes, icons, etc...) to airootfs ####### "
+	echo "################################################################################################ "
+	cp -rf ../etc $buildFolder/archiso/airootfs/ 
+	##################################################################################################################
+
+
+
 	echo "Removing the old packages.x86_64 file from build folder"
 	rm $buildFolder/archiso/packages.x86_64
 	echo
@@ -265,8 +306,13 @@ echo
 
 	[ -d $outFolder ] || mkdir $outFolder
 	cd $buildFolder/archiso/
-	sudo mkarchiso -v -w $buildFolder -o $outFolder $buildFolder/archiso/
+	echo "################################################################################################ "
+	echo "################# X4OS Change #3: addding custom local packages repo to archiso/pacman.conf #### "
+	echo "################################################################################################ "
+	echo -e "\n[x4os-pkg1]\nSigLevel = Optional TrustAll\nServer = file:///tmp/pkg1" >> $buildFolder/archiso/pacman.conf
+	##################################################################################################################
 
+	sudo mkarchiso -v -w $buildFolder -o $outFolder $buildFolder/archiso/
 
 
 echo
