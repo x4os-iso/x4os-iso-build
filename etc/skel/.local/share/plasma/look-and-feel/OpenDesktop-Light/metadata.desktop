@@ -1,0 +1,13 @@
+[Desktop Entry]
+Comment=OpenDesktop-Light
+Name=OpenDesktop-Light
+X-KDE-PluginInfo-Author=Vincenzo Caselli
+X-KDE-PluginInfo-Category=Plasma Look And Feel
+X-KDE-PluginInfo-Email=vincenzo.caselli@gmail.com
+X-KDE-PluginInfo-EnabledByDefault=true
+X-KDE-PluginInfo-License=GPL 2+
+X-KDE-PluginInfo-Name=OpenDesktop-Light
+X-KDE-PluginInfo-Version=1.0.1
+X-KDE-PluginInfo-Website=openDesktop-light
+X-KDE-ServiceTypes=Plasma/LookAndFeel
+X-KPackage-Dependencies=kns://plasma-themes.knsrc/api.kde-look.org/1366185,kns://icons.knsrc/api.kde-look.org/1012265
