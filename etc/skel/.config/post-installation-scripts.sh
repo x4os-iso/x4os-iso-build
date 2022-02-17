@@ -18,3 +18,17 @@ l2="$(grep -n "plugin=org.kde.plasma.pager" /etc/skel/.config/plasma-org.kde.pla
 #calc and remove this line as well as the previous two lines
 l1=$((l2-2))
 sed -i.bak -e ${l1}','${l2}'d' /etc/skel/.config/plasma-org.kde.plasma.desktop-appletsrc 
+
+#change default background
+l1="$(grep -n "Wallpaper" /etc/skel/.config/plasma-org.kde.plasma.desktop-appletsrc | head -n 1 | cut -d: -f1)"
+l2=$((l1+1))
+sed -i.bak -e ${l2}'d' /etc/skel/.config/plasma-org.kde.plasma.desktop-appletsrc
+sed -i.bak -e ${l2}'i Image=file:///etc/skel/.local/share/wallpapers/beach-mi-pad-5-pro-aerial-view-drone-photo-seashore-winter-3840x3840-6511.jpg' /etc/skel/.config/plasma-org.kde.plasma.desktop-appletsrc
+
+l1="$(grep -n "Wallpaper" /etc/skel/.config/plasma-org.kde.plasma.desktop-appletsrc | tail -n 1 | cut -d: -f1)"
+l2=$((l1+1))
+sed -i.bak -e ${l2}'d' /etc/skel/.config/plasma-org.kde.plasma.desktop-appletsrc
+sed -i.bak -e ${l2}'i Image=file:///etc/skel/.local/share/wallpapers/beach-mi-pad-5-pro-aerial-view-drone-photo-seashore-winter-3840x3840-6511.jpg' /etc/skel/.config/plasma-org.kde.plasma.desktop-appletsrc
+
+
+
