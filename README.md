@@ -1,44 +1,30 @@
-# ArcoLinux BYOI Plasma desktop
+# X4OS Project
+This project is (re-)based on
+https://github.com/arcolinuxb/arco-plasma
 
-# Get your code to build your own iso
+The purpose of this project is two-fold:
+1) show how easy is building your own (customized) Arch iso with a single script, thanks to the ArcoLinux BYOI
+2) build X4OS iso, hosted at https://sourceforge.net/projects/x4os/files 
 
-	git clone https://github.com/arcolinuxb/arco-plasma
+# How to build your own iso
 
-# Follow installation tutorials on
+1. ensure to have an Arch system with archiso package installed (best results with ArcoLinux B Plasma)
 
-https://arcolinuxb.com
-
-# Websites
-
-Information : https://arcolinux.info
-
-Tutorials about ArcoLinux iso (Xfce, Openbox and i3) : https://arcolinux.com
-
-Tutorials about ArcoLinuxD iso (any desktop) : https://arcolinuxd.com
-
-Tutorials how to build your own iso : https://arcolinuxb.com
-
-Forum : https://arcolinuxforum.com
+2.		git clone https://github.com/x4os-iso/x4os-iso-build.git
+	
+3. cd installation-scripts
+	
+4. open a terminal and issue the following command
+	./30-build-the-iso-the-first-time.sh
+	
+... wait ...
+	
+5. the iso is generated into folder <home>/ArcoLinuxB-Out
 
 
-# Social Media
+# How to customize installation
 
-Facebook : https://www.facebook.com/arcolinuxd/
-
-Facebook : https://www.facebook.com/groups/arcolinux/
-
-Flickr   : https://www.flickr.com/photos/arcolinux/
-
-Twitter  : https://twitter.com/arcolinux
-
-Instagram: https://www.instagram.com/arcolinux/
-
-Linked in: https://www.linkedin.com/in/arcolinux
-
-Youtube  : https://www.youtube.com/erikdubois
-
-Mastodon Page : https://mastodon.social/@arcolinux
-
-Mewe Group : https://mewe.com/group/5bbc4577a40f3002b313671d
-
-Mewe ArcoLinux : https://mewe.com/profile/5bc022ac70fb13619f97af90
+change content of script
+	
+	/etc/skel/.config/post-installation-scripts.sh
+	
