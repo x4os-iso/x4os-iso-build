@@ -17,27 +17,27 @@
 
 
 echo "################################################################################################ "
-echo "################# X4OS Change #1: build local custom package pkg1 and add to repositories ###### "
+echo "################# X4OS Change #1: build local custom package x4os-post-install and add to repositories ###### "
 echo "################################################################################################ "
 #store the current script location for later restore (assuming script is launched after cd <script-folder>)
 scriptFolder=$(pwd)
 
 #if exists then remove temporary package build folder
-rm -rf /tmp/pkg1
+rm -rf /tmp/x4os-post-install
 
 #create temporary package build folder
-mkdir /tmp/pkg1
+mkdir /tmp/x4os-post-install
 
 #copy package files in tmp build folder
-cp ../packages/pkg1/PKGBUILD /tmp/pkg1
-cp ../packages/pkg1/pkg1.install /tmp/pkg1
+cp ../packages/x4os-post-install/PKGBUILD /tmp/x4os-post-install
+cp ../packages/x4os-post-install/x4os-post-install.install /tmp/x4os-post-install
 
 #build package
-cd /tmp/pkg1
+cd /tmp/x4os-post-install
 makepkg
 
 #create repo db and add built package
-repo-add x4os-pkg1.db.tar.gz pkg1-1.0.0-1-x86_64.pkg.tar.zst 
+repo-add x4os-x4os-post-install.db.tar.gz x4os-post-install-1.0.0-1-x86_64.pkg.tar.zst 
 
 #cd back to the stored script location
 cd $scriptFolder
@@ -310,7 +310,7 @@ echo
 	echo "################################################################################################ "
 	echo "################# X4OS Change #3: addding custom local packages repo to archiso/pacman.conf #### "
 	echo "################################################################################################ "
-	echo -e "\n[x4os-pkg1]\nSigLevel = Optional TrustAll\nServer = file:///tmp/pkg1" >> $buildFolder/archiso/pacman.conf
+	echo -e "\n[x4os-x4os-post-install]\nSigLevel = Optional TrustAll\nServer = file:///tmp/x4os-post-install" >> $buildFolder/archiso/pacman.conf
 	##################################################################################################################
 
 	sudo mkarchiso -v -w $buildFolder -o $outFolder $buildFolder/archiso/

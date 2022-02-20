@@ -1,18 +1,15 @@
 # Maintainer: Vincenzo Caselli <vincenzo.caselli@rcp-vision.com>
-pkgname=pkg1
+pkgname=x4os-post-install
 pkgver=1.0.0
 pkgrel=1
-pkgdesc="Just a test for building an Arch package"
+pkgdesc="x4os post intallation script launcher"
 arch=(x86_64)
-url="https://github.com/vincenzocaselli/arcolinux-pkg1.git"
 license=('MIT')
 install=$pkgname.install
 depends=()
 makedepends=()
 optdepends=()
-provides=(pkg1)
-source=("git+$url")
-md5sums=('SKIP')
+provides=(x4os-post-install)
 
 package() {
 	cd
