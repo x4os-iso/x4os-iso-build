@@ -62,7 +62,8 @@ echo
 
 	arcolinuxVersion='v22.03.05'
 
-	isoLabel='arcolinuxb-'$desktop'-'$arcolinuxVersion'-x86_64.iso'
+	#isoLabel='arcolinuxb-'$desktop'-'$arcolinuxVersion'-x86_64.iso'
+	isoLabel='x4os-20220220-x86_64.iso'
 
 	# setting of the general parameters
 	archisoRequiredVersion="archiso 61-1"
