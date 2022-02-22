@@ -60,7 +60,7 @@ echo
 	desktop="plasma"
 	dmDesktop="plasma"
 
-	arcolinuxVersion='v22.03.05'
+	arcolinuxVersion='v22.03.06'
 
 	#isoLabel='arcolinuxb-'$desktop'-'$arcolinuxVersion'-x86_64.iso'
 	isoLabel='x4os-20220220-x86_64.iso'
