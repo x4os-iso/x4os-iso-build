@@ -30,5 +30,12 @@ l2=$((l1+1))
 sed -i.bak -e ${l2}'d' /etc/skel/.config/plasma-org.kde.plasma.desktop-appletsrc
 sed -i.bak -e ${l2}'i Image=file:///etc/skel/.local/share/wallpapers/beach-mi-pad-5-pro-aerial-view-drone-photo-seashore-winter-3840x3840-6511.jpg' /etc/skel/.config/plasma-org.kde.plasma.desktop-appletsrc
 
+########################## enable Plasma Overview effect and map it to 'Meta + Tab' ##########################################################################
+#find row for insertion
+l1="$(grep -n "wobblywindowsEnabled" /etc/skel/.config/kwinrc | head -n 1 | cut -d: -f1)"
+l2=$((l1+1))
+sed -i.bak -e ${l2}'i overviewEnabled=true' /etc/skel/.config/kwinrc
 
-
+sed -i.bak -i 's/Overview=,Meta+W,Toggle Overview/Overview=Meta+Tab,Meta+W,Toggle Overview/g' /etc/skel/.config/kglobalshortcutsrc
+sed -i.bak -i 's/next activity=Meta+Tab,none,Walk through activities/next activity=none,Meta+Tab,Walk through activities/g' /etc/skel/.config/kglobalshortcutsrc
+##############################################################################################################################################################
