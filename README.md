@@ -15,6 +15,7 @@ The purpose of this project is two-fold:
 3. cd installation-scripts
 	
 4. open a terminal and issue the following command
+	
 	./30-build-the-iso-the-first-time.sh
 	
 ... wait ...
