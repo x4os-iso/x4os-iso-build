@@ -12,20 +12,22 @@ The purpose of this project is two-fold:
 
 2.		git clone https://github.com/x4os-iso/x4os-iso-build.git
 	
-3. cd installation-scripts
+3. cd into folder **installation-scripts**
 	
 4. open a terminal and issue the following command
 	
-	./30-build-the-iso-the-first-time.sh
+	**`./30-build-the-iso-the-first-time.sh`**
 	
 ... wait ...
 	
-5. the iso is generated into folder <home>/ArcoLinuxB-Out
+5. the iso is generated into folder
+
+	**[home]/ArcoLinuxB-Out**
 
 
 # How to customize installation
 
 change content of script
 	
-	/etc/skel/.config/post-installation-scripts.sh
+	etc/skel/.config/post-installation-scripts.sh
 	
