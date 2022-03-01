@@ -434,16 +434,16 @@ zsh-syntax-highlighting
 ###########################################################################
 
 ###applications
-vivaldi
-vivaldi-ffmpeg-codecs
-vivaldi-widevine
+#vivaldi
+#vivaldi-ffmpeg-codecs
+#vivaldi-widevine
 
 ###cursors
 #breeze-cursors-lh
 #breeze-obsidian-cursor-theme
 #oxy-neon
 bibata-cursor-theme-bin
-breeze
+#breeze
 #xcursor-vanilla-dmz-aa
 
 ###fonts
@@ -590,7 +590,7 @@ arcolinux-tweak-tool-git
 arcolinux-variety-git
 arcolinux-variety-autostart-git
 #arcolinux-volumeicon-git
-arcolinux-wallpapers-git
+#arcolinux-wallpapers-git
 #arcolinux-wallpapers-dual-git
 #arcolinux-xfce-panel-profiles-git
 #arcolinux-xmobar-git
@@ -933,8 +933,8 @@ arcolinux-sddm-simplicity-git
 #                                ISO SPECIFIC
 ###########################################################################
 
-#plasma-meta
-plasma
+plasma-meta
+#plasma
 packagekit-qt5
 partitionmanager
 kdeconnect
@@ -949,7 +949,7 @@ kde-gtk-config
 ark
 ffmpegthumbs
 sddm-kcm
-surfn-plasma-dark-icons-git
+#surfn-plasma-dark-icons-git
 kinit
 audiocd-kio
 
@@ -981,7 +981,7 @@ qt5-virtualkeyboard
 
 #kde-development-environment-meta
 
-atom
+#atom
 latte-dock
 sublime-text-4
 konsole
@@ -992,8 +992,8 @@ konsole
 #ttf-wps-fonts
 #ttf-windows AUR
 gnome-disk-utility
-linux-lts
-linux-lts-headers
+#linux-lts
+#linux-lts-headers
 #yakuake (removed above)
 copyq
 baobab
