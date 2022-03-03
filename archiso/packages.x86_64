@@ -56,8 +56,8 @@ libusb-compat
 linux
 linux-atm
 linux-firmware
-linux-firmware-qlogic
-linux-firmware-marvell
+#linux-firmware-qlogic
+#linux-firmware-marvell
 #livecd-sounds
 lsscsi
 lvm2
