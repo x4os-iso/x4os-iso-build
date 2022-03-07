@@ -42,3 +42,6 @@ l2=$((l1+1))
 sed -i.bak -e ${l2}'i Overview=Meta+Tab,Meta+W,Toggle Overview' /etc/skel/.config/kglobalshortcutsrc
 sed -i.bak -i 's/next activity=Meta+Tab,none,Walk through activities/next activity=none,Meta+Tab,Walk through activities/g' /etc/skel/.config/kglobalshortcutsrc
 ##############################################################################################################################################################
+
+#enable Meta key to open Launcher in Latte Dock
+kwriteconfig5 --file /etc/skel/.config/kwinrc --group ModifierOnlyShortcuts --key Meta "org.kde.lattedock,/Latte,org.kde.LatteDock,activateLauncherMenu"
