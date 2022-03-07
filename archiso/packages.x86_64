@@ -96,7 +96,7 @@ reflector
 reiserfsprogs
 rp-pppoe
 rsync
-rxvt-unicode-terminfo
+#rxvt-unicode-terminfo
 screen
 sdparm
 sg3_utils
@@ -280,7 +280,7 @@ poppler-qt5
 #deadbeef
 #dmenu
 #evolution
-feh
+#feh
 firefox
 #flashplugin
 #galculator
@@ -300,12 +300,12 @@ numlockx
 #qbittorrent
 scrot
 #simplescreenrecorder
-termite
-variety
+#termite
+#variety
 #vlc
 
 ###conky
-jq
+#jq
 #lm_sensors
 
 ###cursors
@@ -313,7 +313,7 @@ jq
 
 ###fonts
 adobe-source-sans-fonts
-awesome-terminal-fonts
+#awesome-terminal-fonts
 noto-fonts
 #ttf-bitstream-vera
 ttf-dejavu
@@ -338,7 +338,7 @@ ttf-ubuntu-font-family
 #openbox-arc-git
 
 ###utilities
-arandr
+#arandr
 asciinema
 bash-completion
 #baobab
@@ -366,7 +366,7 @@ gksu
 gparted
 #gpick
 #gtop
-hardinfo-gtk3
+#hardinfo-gtk3
 #hddtemp
 htop
 #hunspell
@@ -417,8 +417,8 @@ unzip
 #vnstat
 w3m
 webkit2gtk
-wmctrl
-xapp
+#wmctrl
+#xapp
 #xdo
 #xdotool
 #xdg-desktop-portal-gtk
@@ -470,7 +470,7 @@ ttf-ms-fonts
 mkinitcpio-openswap
 
 ###utilities-repo
-alacritty
+#alacritty
 #appstream
 archiso
 conky-lua-archers
@@ -499,9 +499,9 @@ rate-mirrors-bin
 #the_platinum_searcher-bin
 the_silver_searcher
 #trizen
-urxvt-fullscreen
-urxvt-perls
-urxvt-resize-font-git
+#urxvt-fullscreen
+#urxvt-perls
+#urxvt-resize-font-git
 #wttr
 yad
 #yakuake
@@ -520,8 +520,8 @@ yay-bin
 #                           ARCOLINUX FOLDER
 ###########################################################################
 
-arcolinux-alacritty-git
-arcolinux-arc-kde
+#arcolinux-alacritty-git
+#arcolinux-arc-kde
 #arcolinux-arc-themes-2021-git
 arcolinux-bin-git
 #arcolinux-candy-beauty-git
@@ -539,7 +539,7 @@ arcolinux-grub-theme-vimix-git
 #arcolinux-gtk3-sardi-arc-git
 #arcolinux-gtk3-surfn-arc-git
 #arcolinux-gtk3-surfn-arc-breeze-git
-arcolinux-gtk3-surfn-plasma-dark-git
+#arcolinux-gtk3-surfn-plasma-dark-git
 #arcolinux-guake-autostart-git
 arcolinux-hblock-git
 arcolinux-keyring
@@ -583,12 +583,12 @@ arcolinux-system-config-git
 #arcolinux-system-config-dev-git
 #arcolinuxd-system-config-git
 arcolinux-systemd-services-git
-arcolinux-termite-themes-git
+#arcolinux-termite-themes-git
 #arcolinux-tint2-git
 #arcolinux-tint2-themes-git
 arcolinux-tweak-tool-git
-arcolinux-variety-git
-arcolinux-variety-autostart-git
+#arcolinux-variety-git
+#arcolinux-variety-autostart-git
 #arcolinux-volumeicon-git
 #arcolinux-wallpapers-git
 #arcolinux-wallpapers-dual-git
@@ -936,7 +936,7 @@ arcolinux-sddm-simplicity-git
 plasma-meta
 #plasma
 packagekit-qt5
-partitionmanager
+#partitionmanager
 kdeconnect
 systemd-kcm
 ocs-url
@@ -997,7 +997,7 @@ gnome-disk-utility
 #yakuake (removed above)
 copyq
 baobab
-hplip
+#hplip
 #ksnip
 #displaylink AUR
 #displaylink-connect AUR
