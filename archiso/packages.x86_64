@@ -44,7 +44,7 @@ hdparm
 intel-ucode
 ipw2100-fw
 ipw2200-fw
-irssi
+#irssi
 #iw
 #iwd
 jfsutils
