@@ -17,7 +17,7 @@ sed -i 's/plugin=org.kde.plasma.kicker/plugin=org.kde.plasma.panelspacer/g' /etc
 l2="$(grep -n "plugin=org.kde.plasma.pager" /etc/skel/.config/plasma-org.kde.plasma.desktop-appletsrc | head -n 1 | cut -d: -f1)"
 #calc and remove this line as well as the previous two lines
 l1=$((l2-2))
-sed -e ${l1}','${l2}'d' /etc/skel/.config/plasma-org.kde.plasma.desktop-appletsrc 
+sed -i.bak -e ${l1}','${l2}'d' /etc/skel/.config/plasma-org.kde.plasma.desktop-appletsrc 
 
 #change default background
 l1="$(grep -n "Wallpaper" /etc/skel/.config/plasma-org.kde.plasma.desktop-appletsrc | head -n 1 | cut -d: -f1)"
