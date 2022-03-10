@@ -45,6 +45,3 @@ sed -i.bak -i 's/next activity=Meta+Tab,none,Walk through activities/next activi
 
 #enable Meta key to open Launcher in Latte Dock
 kwriteconfig5 --file /etc/skel/.config/kwinrc --group ModifierOnlyShortcuts --key Meta "org.kde.lattedock,/Latte,org.kde.LatteDock,activateLauncherMenu"
-
-#Thicker Plasma panel (48 pixel height)
-sed -i.bak -e 1'i [PlasmaViews][Panel 2][Defaults]\nthickness=48\n\n[PlasmaViews][Panel 2][Horizontal1920]\nthickness=48\n' /etc/skel/.config/plasmashellrc
