@@ -60,10 +60,10 @@ echo
 	desktop="plasma"
 	dmDesktop="plasma"
 
-	arcolinuxVersion='v22.04.01'
+	arcolinuxVersion='20220313'
 
 	#isoLabel='arcolinuxb-'$desktop'-'$arcolinuxVersion'-x86_64.iso'
-	isoLabel='x4os-20220220-x86_64.iso'
+	isoLabel='x4os-v22.04.01-x86_64.iso'
 
 	# setting of the general parameters
 	archisoRequiredVersion="archiso 61-1"
@@ -277,10 +277,10 @@ echo
 
 	#profiledef.sh
 	oldname1='iso_name="arcolinuxl'
-	newname1='iso_name="arcolinuxb-'$desktop
+	newname1='iso_name="x4os'
 
 	oldname2='iso_label="arcolinuxl'
-	newname2='iso_label="arcolinuxb-'$desktop
+	newname2='iso_label="x4os'
 
 	oldname3='ArcoLinuxL'
 	newname3='ArcoLinuxB-'$desktop
