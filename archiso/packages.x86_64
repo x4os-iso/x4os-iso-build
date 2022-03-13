@@ -995,7 +995,7 @@ gnome-disk-utility
 #linux-lts
 #linux-lts-headers
 #yakuake (removed above)
-copyq
+#copyq
 baobab
 #hplip
 #ksnip
