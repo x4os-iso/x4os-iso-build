@@ -45,3 +45,12 @@ sed -i.bak -i 's/next activity=Meta+Tab,none,Walk through activities/next activi
 
 #enable Meta key to open Launcher in Latte Dock
 kwriteconfig5 --file /etc/skel/.config/kwinrc --group ModifierOnlyShortcuts --key Meta "org.kde.lattedock,/Latte,org.kde.LatteDock,activateLauncherMenu"
+
+#fix Breeze GTK checkboxes and radiobuttons
+cp /etc/skel/.tmp/Breeze-checkbox-radiobutton-gtk-fixed/breeze-check-checked-symbolic.svg /usr/share/themes/Breeze/assets/
+cp /etc/skel/.tmp/Breeze-checkbox-radiobutton-gtk-fixed/breeze-radio-checked-symbolic.svg /usr/share/themes/Breeze/assets/
+cp /etc/skel/.tmp/Breeze-checkbox-radiobutton-gtk-fixed/breeze-check-checked-symbolic.svg /usr/share/themes/Breeze-Dark/assets/
+cp /etc/skel/.tmp/Breeze-checkbox-radiobutton-gtk-fixed/breeze-radio-checked-symbolic.svg /usr/share/themes/Breeze-Dark/assets/
+#if it works => rm .tmp after
+
+
