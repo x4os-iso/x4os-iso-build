@@ -13,7 +13,7 @@ bind-tools
 #brltty
 broadcom-wl-dkms
 btrfs-progs
-clonezilla
+#clonezilla
 #cloud-init
 crda
 cryptsetup
@@ -31,7 +31,7 @@ efibootmgr
 #espeakup
 ethtool
 exfatprogs
-f2fs-tools
+#f2fs-tools
 fatresize
 fsarchiver
 gnu-netcat
@@ -80,12 +80,12 @@ nilfs-utils
 #nmap
 ntfs-3g
 nvme-cli
-openconnect
+#openconnect
 openssh
-openvpn
-partclone
-parted
-partimage
+#openvpn
+#partclone
+#parted
+#partimage
 pcsclite
 ppp
 pptpclient
@@ -117,7 +117,7 @@ usbmuxd
 usbutils
 vim
 #virtualbox-guest-utils-nox
-vpnc
+#vpnc
 wireless-regdb
 wireless_tools
 wpa_supplicant
@@ -227,10 +227,10 @@ mobile-broadband-provider-info
 modemmanager
 networkmanager
 network-manager-applet
-networkmanager-openconnect
-networkmanager-openvpn
+#networkmanager-openconnect
+#networkmanager-openvpn
 networkmanager-pptp
-networkmanager-vpnc
+#networkmanager-vpnc
 openresolv
 #samba
 
@@ -289,7 +289,7 @@ firefox
 #gmrun
 #gsimplecal
 #guvcview
-imagemagick
+#imagemagick
 #inkscape
 #libreoffice-fresh
 #lshw
