@@ -478,7 +478,7 @@ downgrade
 #font-manager
 #glxinfo
 #gitahead-bin
-grub-customizer
+#grub-customizer
 hardcode-fixer-git
 inxi
 mintstick-git
