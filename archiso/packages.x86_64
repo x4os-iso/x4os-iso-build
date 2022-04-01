@@ -53,7 +53,7 @@ less
 #lftp
 libfido2
 libusb-compat
-linux
+#linux
 linux-atm
 linux-firmware
 #linux-firmware-qlogic
@@ -129,7 +129,7 @@ xl2tpd
 aic94xx-firmware
 dialog
 dnsutils
-linux-headers
+#linux-headers
 logrotate
 ntp
 r8168-dkms
@@ -992,10 +992,10 @@ konsole
 #ttf-wps-fonts
 #ttf-windows AUR
 gnome-disk-utility
-#linux-lts
-#linux-lts-headers
+linux-lts
+linux-lts-headers
 #yakuake (removed above)
-#copyq
+copyq
 baobab
 #hplip
 #ksnip
