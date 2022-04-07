@@ -992,8 +992,8 @@ konsole
 #ttf-wps-fonts
 #ttf-windows AUR
 gnome-disk-utility
-linux-lts
-linux-lts-headers
+#linux-lts
+#linux-lts-headers
 #yakuake (removed above)
 copyq
 baobab
