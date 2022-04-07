@@ -66,7 +66,7 @@ echo
 	isoLabel='x4os-v22.05.01-x86_64.iso'
 
 	# setting of the general parameters
-	archisoRequiredVersion="archiso 62-1"
+	archisoRequiredVersion="archiso 62.1-1"
 	buildFolder=$HOME"/arcolinuxb-build"
 	outFolder=$HOME"/ArcoLinuxB-Out"
 	archisoVersion=$(sudo pacman -Q archiso)
