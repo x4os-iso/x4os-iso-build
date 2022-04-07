@@ -1,0 +1,24 @@
+[Desktop Entry]
+Categories=Qt;KDE;Utility;
+Comment[en_US]=A cut & paste history utility
+Comment=A cut & paste history utility
+Exec=copyq --start-server
+GenericName[en_US]=Clipboard Manager
+GenericName=Clipboard Manager
+Icon=/etc/skel/.local/share/icons/OpenDesktop-DarkIcons/actions/symbolic/edit-paste-symbolic.svg
+MimeType=
+Name[en_US]=CopyQ
+Name=CopyQ
+Path=
+StartupNotify=false
+Terminal=false
+TerminalOptions=
+Type=Application
+X-DBUS-ServiceName=
+X-DBUS-StartupType=
+X-GNOME-Autostart-Delay=3
+X-KDE-StartupNotify=false
+X-KDE-SubstituteUID=false
+X-KDE-UniqueApplet=true
+X-KDE-Username=
+X-KDE-autostart-after=panel
