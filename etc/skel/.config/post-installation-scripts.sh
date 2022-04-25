@@ -2,7 +2,7 @@
 sed -i 's/LookAndFeelPackage=org.kde.breezetwilight-arcolinux.desktop/LookAndFeelPackage=OpenDesktop-Dark/g' /etc/skel/.config/kdeglobals
 
 #set OpenDesktop-DarkIcons as default KDE Plasma Icon Theme
-sed -i 's/Theme=Surfn-Plasma-Dark/Theme=OpenDesktop-DarkIcons/g' /etc/skel/.config/kdeglobals
+sed -i 's/Theme=Surfn-Plasma-Dark/Theme=arcolinux-candy-beauty/g' /etc/skel/.config/kdeglobals
 
 #set Qogir-dark style as Plasma style 
 sed -i 's/name=breeze-dark/name=Qogir-dark/g' /etc/skel/.config/plasmarc
