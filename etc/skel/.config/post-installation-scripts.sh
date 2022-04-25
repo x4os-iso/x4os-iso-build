@@ -61,3 +61,7 @@ l1=$((l2-2))
 sed -i.bak -e ${l1}','${l2}'d' /etc/skel/.config/plasma-org.kde.plasma.desktop-appletsrc 
 #find and remove just first occurrence of "org.kde.plasma.clipboard,"
 sed -i '0,/org.kde.plasma.clipboard,/s///' /etc/skel/.config/plasma-org.kde.plasma.desktop-appletsrc 
+
+#Disable GTK scrollbars overlay
+echo $'\nGTK_OVERLAY_SCROLLING=0' >> /etc/environment
+
