@@ -3880,9 +3880,15 @@ treeview.view header button, treeview.view header button:hover, treeview.view he
 decoration {
   border-radius: 3px 3px 0 0;
   border-width: 0px;
-  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.5), 0px 2px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.5), 0 0 2px 2px rgba(31,158,255,0.8);
   /* this is used for the resize cursor area */
   margin: 10px; }
+decoration:backdrop {
+  border-radius: 0px; 
+  border: 1px solid #000000;
+  box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.4),0 0 1px 1px rgba(162,162,168,0.8);
+  /* this is used for the resize cursor area */
+  margin: 1px; }
   .maximized decoration, .fullscreen decoration, .tiled decoration {
     border-radius: 0; }
   .popup decoration {
