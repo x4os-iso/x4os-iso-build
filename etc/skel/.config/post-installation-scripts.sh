@@ -62,10 +62,9 @@ sed -i.bak -e ${l1}','${l2}'d' /etc/skel/.config/plasma-org.kde.plasma.desktop-a
 #find and remove just first occurrence of "org.kde.plasma.clipboard,"
 sed -i '0,/org.kde.plasma.clipboard,/s///' /etc/skel/.config/plasma-org.kde.plasma.desktop-appletsrc 
 
-#Disable GTK scrollbars overlay
+#disable GTK scrollbars overlay
 echo $'\nGTK_OVERLAY_SCROLLING=0' >> /etc/environment
 
 #set x4os-gtk as default GTK Theme (aligned with OpenDesktop-Dark KDE Global Theme)
-sed -i 's/gtk-theme-name=Breeze/gtk-theme-name=x4os-gtk/g' /etc/skel/.config/gtk-3.0/settings.ini
-sed -i 's/gtk-theme-name=Breeze/gtk-theme-name=x4os-gtk/g' /etc/skel/.config/gtk-4.0/settings.ini
-sed -i 's/ThemeName "Breeze"/ThemeName "x4os-gtk"/g' /etc/skel/.config/xsettingsd/xsettingsd.conf
+echo $'\nGTK_THEME=x4os-gtk' >> /etc/environment
+
