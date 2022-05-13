@@ -1820,8 +1820,8 @@ headerbar entry,
 headerbar spinbutton,
 headerbar separator,
 headerbar button {
-  margin-top: 8px;
-  margin-bottom: 8px; }
+  margin-top: 1px;
+  margin-bottom: 1px; }
 
 /**************
  * GtkInfoBar *
@@ -3919,7 +3919,7 @@ window.solid-csd paned.titlebar headerbar {
   border-radius: 0; }
 
 window headerbar.titlebar {
-  min-height: 46px; }
+  min-height: 32px; }
 
 window headerbar.default-decoration button.titlebutton,
 window .titlebar.default-decoration button.titlebutton {
