@@ -68,6 +68,6 @@ echo $'\nGTK_OVERLAY_SCROLLING=0' >> /etc/environment
 #set x4os-gtk as default GTK Theme (aligned with OpenDesktop-Dark KDE Global Theme)
 echo $'\nGTK_THEME=x4os-gtk' >> /etc/environment
 
-#Thicker Plasma panel (56 pixel height)
-echo $'[PlasmaViews][Panel 2][Defaults]\nthickness=56\n' >> /etc/skel/.config/plasmashellrc
+#Thicker Plasma panel (48 pixel height)
+echo $'[PlasmaViews][Panel 2][Defaults]\nthickness=48\n' >> /etc/skel/.config/plasmashellrc
 
