@@ -3923,31 +3923,36 @@ window headerbar.titlebar {
 
 window headerbar.default-decoration button.titlebutton,
 window .titlebar.default-decoration button.titlebutton {
-  padding: 1px;
+  padding: 0px;
   min-height: 18px;
   min-width: 18px;
   margin: 0; }
 
 window headerbar button.titlebutton,
 window .titlebar button.titlebutton {
+  border-radius: 0;
   padding: 8px; }
   window headerbar button.titlebutton image,
   window .titlebar button.titlebutton image {
     color: transparent; }
   window headerbar button.titlebutton.close,
   window .titlebar button.titlebutton.close {
+    border-radius: 0;
     padding: 8px;
     border-image: none;
     box-shadow: none;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 18px 18px;
+    padding-left: 16px;
+    padding-right: 16px;
     background-image: -gtk-recolor(url("../assets/breeze-close-symbolic.svg"), color @theme_text_color_breeze);
     -gtk-icon-source: none; }
   window headerbar button.titlebutton.close:hover,
   window .titlebar button.titlebutton.close:hover {
     border-color: #ff0000;
     background-color: #ff0000;
+    padding-left: 16px;
+    padding-right: 16px;
     /*background-image: -gtk-recolor(url("../assets/breeze-close-hover-symbolic.svg"));*/ }
   window headerbar button.titlebutton.close:active,
   window .titlebar button.titlebutton.close:active {
