@@ -3930,13 +3930,13 @@ window .titlebar.default-decoration button.titlebutton {
 
 window headerbar button.titlebutton,
 window .titlebar button.titlebutton {
-  padding: 1px; }
+  padding: 8px; }
   window headerbar button.titlebutton image,
   window .titlebar button.titlebutton image {
     color: transparent; }
   window headerbar button.titlebutton.close,
   window .titlebar button.titlebutton.close {
-    padding: 1px;
+    padding: 8px;
     border-image: none;
     box-shadow: none;
     background-position: center;
